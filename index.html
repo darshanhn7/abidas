@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000; /* solid black background */
+            background-color: #111; /* dark background */
             color: white;
             display: flex;
             justify-content: center;
@@ -22,7 +22,7 @@
             flex-wrap: wrap;
             width: 95%;
             max-width: 1500px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
@@ -32,6 +32,7 @@
             flex: 1;
             padding: 40px;
             min-width: 500px;
+            box-sizing: border-box;
         }
 
         .left h1 {
@@ -69,6 +70,7 @@
             justify-content: center;
             padding: 40px;
             min-width: 300px;
+            box-sizing: border-box;
         }
 
         .right img {
@@ -89,16 +91,32 @@
                 width: 200px;
                 height: 200px;
             }
+
+            #container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left {
+                min-width: 100%;
+                padding: 20px;
+            }
+
+            .right {
+                min-width: 100%;
+                padding: 20px;
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div id="container">
         <div class="left">
-            <h1>Hey,I'm Darshan H N</h1>
+            <h1>Hey, I'm Darshan H N</h1>
             <h2>From Tiptur</h2>
             
-            <h3>B.E in the Stream of Information Science and Technology, 2025 YOP</h3>
+            <h3>B.E in Information Science and Technology, 2025 YOP</h3>
             <h3>Kalpataru Institute of Technology, Tiptur</h3>
 
             <h3><u>Skills</u></h3>
@@ -112,15 +130,19 @@ Problem Solving
             <pre>
 * Basics of Python 
 * Basics of C
-* Web Development:         (HTML, CSS, JS, Boostrap,PHP,Database,React)
+* Web Development:         (HTML, CSS, JS, Boostrap, PHP, Database, React)
 * Core Java:               (Collections, Objects & String Class, Threads, Method Overloading & Method Overriding, Inheritance, 
                             Polymorphism, Abstraction, Encapsulation, Exception Handling)
+                
 * Python Data Analytics:   (Numpy, Pandas, Matplotlib)
-* Basics of Deep Learning: (Neural Networks, CNN, RNN)
+                
+* Basics of Deep Learning: (Neural Networks, CNN,)
+                
 * Linux:                   (Basic Commands, Encryption-Decryption, Shells, GCOSE Information, User and Group, File System,
                             Ntp, Httptd & Logs, Sudo & Networking, Process, Package Management, Permissions, SSH)
+                
 * Networking:              (OSI Model, TCP/IP Model, IP Addressing, Network Topology, Network Devices, Subnetting, Routing Protocols, 
-                            Switching Concepts, DNS, DHCP, HTTP, HTTPS, FTP)  
+                            Switching Concepts, DNS, DHCP, HTTP, HTTPS, FTP) 
             </pre>
 
             <h3><u>Projects</u></h3>
@@ -133,7 +155,7 @@ YouTube Clone
         </div>
 
         <div class="right">
-            <img src="Profile.jpg" alt="Darshan H N">
+            <img src="Profile.jpg" alt="Darshan H N"> <!-- Placeholder Image -->
         </div>
     </div>
 </body>
